@@ -1,303 +1,327 @@
-<!-- <!doctype html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Core Web Developer Portfolio</title>
-    <!-- Stable Alternative Play CDN Link -->
+    <title>Md Rahamat Ali | Advanced Cyber Portfolio</title>
+    <!-- Official Tailwind CSS v4 CDN Link Provided By User -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      /* Modern 3D Performance Animations */
+      @keyframes float-slow {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(3deg);
+        }
+      }
+      @keyframes float-reverse {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(15px) rotate(-3deg);
+        }
+      }
+      @keyframes grid-move {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(40px);
+        }
+      }
+      .animate-float-1 {
+        animation: float-slow 8s ease-in-out infinite;
+      }
+      .animate-float-2 {
+        animation: float-reverse 10s ease-in-out infinite;
+      }
+
+      /* 3D Cyber Perspective Layout Matrix Grid */
+      .cyber-grid {
+        background-size: 40px 40px;
+        background-image:
+          linear-gradient(to right, rgba(35, 21, 72, 0.3) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(35, 21, 72, 0.3) 1px, transparent 1px);
+        transform: perspective(500px) rotateX(60deg);
+        animation: grid-move 4s linear infinite;
+      }
+    </style>
   </head>
   <body
-    class="bg-[#0B0F19] text-white font-sans selection:bg-[#10B981] selection:text-[#0B0F19]"
+    class="bg-[#04020a] text-white font-sans selection:bg-[#00F0FF] selection:text-[#04020a] overflow-x-hidden"
   >
-    <!-- Header / Navigation -->
+    <!-- Glowing Cybernetic Network Grid (Complex Graphic Background) -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+      <div
+        class="absolute -top-[50%] left-0 w-full h-[150%] cyber-grid origin-center opacity-60"
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-[#04020a]/10 via-[#04020a]/80 to-[#04020a]"
+      ></div>
+
+      <!-- Floating Graphic Blobs with Pulse Effect -->
+      <div
+        class="absolute top-1/4 -left-20 w-96 h-96 bg-[#A855F7]/10 rounded-full blur-[130px] animate-float-1"
+      ></div>
+      <div
+        class="absolute bottom-1/4 -right-20 w-[450px] h-[450px] bg-[#00F0FF]/10 rounded-full blur-[150px] animate-float-2"
+      ></div>
+    </div>
+
+    <!-- Animated Top Floating Navigation Interface -->
     <header
-      class="fixed top-0 left-0 w-full bg-[#0B0F19]/80 backdrop-blur-md z-50 border-b border-gray-800"
+      class="fixed top-0 left-0 w-full bg-[#080415]/40 backdrop-blur-2xl z-50 border-b border-[#231548]/80 transition-all duration-300"
     >
       <nav
         class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between"
       >
-        <a href="#" class="text-xl font-bold tracking-wider text-[#10B981]"
-          >&lt;RAHAMAT /&gt;</a
+        <a
+          href="#"
+          class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#00F0FF] via-[#d946ef] to-[#A855F7] hover:scale-105 transition-transform duration-300"
+          >&lt;RAHAMAT.MATRIX /&gt;</a
         >
         <div
-          class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide"
+          class="hidden md:flex items-center space-x-8 text-xs uppercase font-mono tracking-widest text-gray-400"
         >
-          <a href="#about" class="hover:text-[#10B981] transition-colors"
-            >About</a
-          >
-          <a href="#skills" class="hover:text-[#10B981] transition-colors"
-            >Skills</a
-          >
-          <a href="#projects" class="hover:text-[#10B981] transition-colors"
-            >Projects</a
-          >
-          <a href="#contact" class="hover:text-[#10B981] transition-colors"
-            >Contact</a
-          >
+          <a
+            href="#about"
+            class="hover:text-[#00F0FF] transition-all duration-200 relative group py-2"
+            >About<span
+              class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#00F0FF] group-hover:w-full transition-all duration-300"
+            ></span
+          ></a>
+          <a
+            href="#skills"
+            class="hover:text-[#00F0FF] transition-all duration-200 relative group py-2"
+            >Skills<span
+              class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#00F0FF] group-hover:w-full transition-all duration-300"
+            ></span
+          ></a>
+          <a
+            href="#projects"
+            class="hover:text-[#00F0FF] transition-all duration-200 relative group py-2"
+            >Infrastructure<span
+              class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#00F0FF] group-hover:w-full transition-all duration-300"
+            ></span
+          ></a>
+          <a
+            href="#contact"
+            class="hover:text-[#00F0FF] transition-all duration-200 relative group py-2"
+            >Contact<span
+              class="absolute bottom-0 left-0 w-0 h-[2px] bg-[#00F0FF] group-hover:w-full transition-all duration-300"
+            ></span
+          ></a>
         </div>
         <div
-          class="flex items-center space-x-3 bg-gray-900 border border-gray-800 px-3 py-1.5 rounded-full text-xs font-semibold text-[#10B981]"
+          class="flex items-center space-x-2 bg-[#120B28]/90 border border-[#00F0FF]/40 px-4 py-2 rounded-lg text-xs font-mono font-bold text-[#00F0FF] shadow-[0_0_20px_rgba(0,240,255,0.3)]"
         >
-          <span class="w-2 h-2 rounded-full bg-[#10B981] animate-pulse"></span>
-          Lighthouse 95+ Guaranteed
+          <span class="w-2 h-2 rounded-full bg-[#00F0FF] animate-ping"></span>
+          CORE NODE ACTIVE
         </div>
       </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Interactive Hero Engine Section -->
     <section
-      class="min-h-screen flex items-center justify-center pt-24 px-6 relative overflow-hidden"
+      class="min-h-screen flex flex-col items-center justify-center pt-24 px-6 relative z-10"
     >
-      <div
-        class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,#10b98110,transparent_50%)]"
-      ></div>
-      <div class="max-w-4xl mx-auto text-center z-10">
-        <p
-          class="text-[#10B981] font-mono tracking-widest text-sm uppercase mb-4"
-        >
-          Core Frontend & Aspiring Full-Stack Developer
-        </p>
-        <h1
-          class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight"
-        >
-          I build high-performance web experiences from
-          <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-teal-400"
-            >scratch</span
-          >.
-        </h1>
-        <p
-          class="text-[#94A3B8] text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
-        >
-          No heavy page-builders. No unnecessary overhead. Just clean, semantic
-          layouts engineered for extreme speed and pixel-perfect responsiveness.
-        </p>
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Complex Micro-Interaction Tag -->
         <div
-          class="flex flex-col sm:flex-row items-center justify-center gap-4"
+          class="inline-flex items-center gap-2 border border-[#A855F7]/60 bg-[#A855F7]/10 px-4 py-2 rounded-lg text-xs font-mono uppercase tracking-widest text-[#d946ef] mb-8 animate-bounce"
+        >
+          <span class="w-1.5 h-1.5 rounded-full bg-[#d946ef]"></span>
+          System Architect V4.0
+        </div>
+
+        <!-- Graphic Layer Title Grid -->
+        <h1
+          class="text-5xl sm:text-8xl font-black tracking-tighter mb-8 leading-none select-none"
+        >
+          MANIPULATING <br />
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#00F0FF] via-[#a855f7] via-[#f43f5e] to-[#00F0FF] bg-[length:200%_auto] animate-[pulse_6s_linear_infinite]"
+            >VISUAL DATA</span
+          >
+        </h1>
+
+        <p
+          class="text-[#CBD5E1] text-lg sm:text-xl max-w-2xl mx-auto mb-12 leading-relaxed font-light"
+        >
+          Executing clean native viewport builds. Isolated script configurations
+          mapped out for maximum processing execution and zero layout variance
+          using Tailwind v4 Engine.
+        </p>
+
+        <!-- Animated Custom Interactive Controls -->
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-5"
         >
           <a
             href="#projects"
-            class="w-full sm:w-auto px-8 py-4 bg-[#10B981] hover:bg-[#059669] text-[#0B0F19] font-bold rounded-lg transition-all transform hover:-translate-y-0.5 text-center shadow-lg shadow-emerald-500/20"
+            class="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-[#00F0FF] via-[#3B82F6] to-[#A855F7] text-[#080415] font-black rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 text-center shadow-[0_0_30px_rgba(0,240,255,0.4)] uppercase tracking-wider text-sm"
           >
-            View My Work
+            Initialize System View
           </a>
           <a
             href="#contact"
-            class="w-full sm:w-auto px-8 py-4 bg-gray-900 hover:bg-gray-800 border border-gray-700 text-white font-medium rounded-lg transition-colors text-center"
+            class="w-full sm:w-auto px-10 py-5 bg-[#120B28]/90 border-2 border-[#231548] text-white font-bold rounded-xl text-center hover:border-[#00F0FF] hover:text-[#00F0FF] transition-all duration-300 tracking-wider text-sm uppercase"
           >
-            Let's Connect
+            Open Channel
           </a>
         </div>
       </div>
     </section>
 
-    <!-- About Me Section -->
-    <section
-      id="about"
-      class="py-24 px-6 bg-gradient-to-b from-[#0B0F19] to-gray-950"
-    >
-      <div class="max-w-4xl mx-auto">
-        <h2
-          class="text-2xl sm:text-3xl font-bold mb-12 flex items-center gap-4"
+    <!-- Profile Specifications Section -->
+    <section id="about" class="py-32 px-6 max-w-4xl mx-auto relative z-10">
+      <h2
+        class="text-2xl sm:text-4xl font-black mb-16 flex items-center gap-4 uppercase tracking-widest"
+      >
+        <span class="text-[#A855F7] font-mono text-lg">01 //</span> SYSTEM
+        MATRIX
+        <span
+          class="h-[1px] bg-gradient-to-r from-[#231548] to-transparent flex-grow"
+        ></span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+        <div
+          class="md:col-span-2 space-y-6 text-[#CBD5E1] text-base sm:text-lg leading-relaxed font-light"
         >
-          <span class="text-[#10B981] font-mono text-xl">01.</span> About Me
-          <span class="h-[1px] bg-gray-800 flex-grow"></span>
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+          <p>
+            Greetings. I am
+            <strong
+              class="text-white font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00F0FF]"
+              >Md Rahamat Ali</strong
+            >. I decouple native layout structures and build high-performance
+            user interface frameworks using advanced structural configurations.
+          </p>
+          <p>
+            By debugging system paint steps manually, my client integrations
+            bypass common performance bottlenecks. Currently, I am expanding my
+            pipeline into multi-threaded servers using Python frameworks.
+          </p>
+        </div>
+
+        <!-- 3D Look Interactive Metric Card Component -->
+        <div
+          class="bg-[#120B28]/60 border-2 border-[#231548] p-8 rounded-2xl flex flex-col items-center text-center relative group hover:border-[#00F0FF] transition-all duration-500 shadow-2xl backdrop-blur-md"
+        >
           <div
-            class="md:col-span-2 space-y-6 text-[#94A3B8] text-base sm:text-lg leading-relaxed"
-          >
-            <p>
-              Hello! I am a software craftsman specialized in hand-crafting
-              clean interfaces. Because I eliminate layout bloat by writing
-              native structures, my built templates regularly score a perfect
-              green streak on performance matrices.
-            </p>
-            <p>
-              My engineering baseline connects robust user interfaces with
-              active server data pipelines using asynchronous JavaScript APIs.
-              Currently, I am scaling my technical architecture into
-              <strong>Python engineering</strong> to establish full-stack
-              capabilities.
-            </p>
-          </div>
-          <!-- Mini Lighthouse Score Visual Card -->
+            class="absolute inset-0 bg-gradient-to-b from-[#00F0FF]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
           <div
-            class="bg-[#151D30] border border-gray-800 p-6 rounded-xl flex flex-col items-center text-center shadow-xl"
+            class="relative flex items-center justify-center w-28 h-28 rounded-xl border-2 border-[#00F0FF] mb-6 shadow-[0_0_20px_rgba(0,240,255,0.2)] group-hover:rotate-6 transition-transform duration-300"
           >
-            <div
-              class="relative flex items-center justify-center w-24 h-24 rounded-full border-4 border-[#10B981] mb-4"
+            <span
+              class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#00F0FF] to-[#A855F7]"
+              >99</span
             >
-              <span class="text-2xl font-black text-[#10B981]">95+</span>
-            </div>
-            <h3
-              class="font-bold text-sm uppercase tracking-wider text-white mb-1"
-            >
-              Lighthouse Speed
-            </h3>
-            <p class="text-xs text-[#94A3B8]">
-              Optimized semantic structure, fast loading times, and high
-              accessibility metrics.
-            </p>
           </div>
+          <h3
+            class="font-mono font-bold text-xs uppercase tracking-widest text-white mb-2"
+          >
+            SPEED INDEX
+          </h3>
+          <p class="text-xs text-[#CBD5E1] font-light">
+            Lighthouse compilation score validated across external data streams.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-24 px-6">
-      <div class="max-w-4xl mx-auto">
-        <h2
-          class="text-2xl sm:text-3xl font-bold mb-12 flex items-center gap-4"
-        >
-          <span class="text-[#10B981] font-mono text-xl">02.</span> Technical
-          Stack
-          <span class="h-[1px] bg-gray-800 flex-grow"></span>
-        </h2>
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <div
-            class="bg-[#151D30] border border-gray-800 p-4 rounded-lg flex items-center space-x-3 hover:shadow-[0_0_25px_rgba(16,185,129,0.25)] transition-all duration-300
-"
-          >
-            <span class="text-[#10B981] font-mono text-sm">&lt;/&gt;</span>
-            <span class="font-medium text-sm">HTML5 / CSS3</span>
-          </div>
-          <div
-            class="bg-[#151D30] border border-gray-800 p-4 rounded-lg flex items-center space-x-3 hover:shadow-[0_0_25px_rgba(16,185,129,0.25)] transition-all duration-300
-"
-          >
-            <span class="text-[#10B981] font-mono text-sm">JS</span>
-            <span class="font-medium text-sm">JavaScript (ES6+)</span>
-          </div>
-          <div
-            class="bg-[#151D30] border border-gray-800 p-4 rounded-lg flex items-center space-x-3 hover:shadow-[0_0_25px_rgba(16,185,129,0.25)] transition-all duration-300
-"
-          >
-            <span class="text-[#10B981] font-mono text-sm">#</span>
-            <span class="font-medium text-sm">Tailwind CSS</span>
-          </div>
-          <div
-            class="bg-[#151D30] border border-gray-800 p-4 rounded-lg flex items-center space-x-3 hover:shadow-[0_0_25px_rgba(16,185,129,0.25)] transition-all duration-300
-"
-          >
-            <span class="text-[#10B981] font-mono text-sm">PY</span>
-            <span class="font-medium text-sm">Python (In Progress)</span>
-          </div>
+           <!-- Interactive Project Interface Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <!-- Advanced Card 1 (Flipkart Clone) -->
+            <a href="https://github.io" target="_blank" class="bg-[#120B28]/70 border border-[#231548] rounded-2xl overflow-hidden flex flex-col group hover:border-[#00F0FF] hover:shadow-[0_0_40px_rgba(0,240,255,0.3)] hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm relative">
+                <div class="p-6 flex-grow">
+                    <div class="text-[#00F0FF] font-mono text-[10px] tracking-widest mb-3 flex justify-between items-center">
+                        <span>GRID LAYOUT ENGINE</span>
+                        <span class="text-sm font-bold transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">↗</span>
+                    </div>
+                    <h3 class="text-xl font-black text-white mb-3 group-hover:text-[#00F0FF] transition-colors">Flipkart Clone</h3>
+                    <p class="text-[#CBD5E1] text-sm leading-relaxed font-light">
+                        High-density asset arrangement mapping intricate grid layouts with zero UI displacement or frame delays.
+                    </p>
+                </div>
+                <div class="h-1 w-0 bg-gradient-to-r from-[#00F0FF] to-[#3B82F6] group-hover:w-full transition-all duration-500"></div>
+            </a>
+
+            <!-- Advanced Card 2 (Shangrila Restaurant) -->
+            <a href="https://github.io" target="_blank" class="bg-[#120B28]/70 border border-[#231548] rounded-2xl overflow-hidden flex flex-col group hover:border-[#00F0FF] hover:shadow-[0_0_40px_rgba(0,240,255,0.3)] hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm relative">
+                <div class="p-6 flex-grow">
+                    <div class="text-[#00F0FF] font-mono text-[10px] tracking-widest mb-3 flex justify-between items-center">
+                        <span>DATA INPUT SYSTEM</span>
+                        <span class="text-sm font-bold transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">↗</span>
+                    </div>
+                    <h3 class="text-xl font-black text-white mb-3 group-hover:text-[#00F0FF] transition-colors">Shangrila Portal</h3>
+                    <p class="text-[#CBD5E1] text-sm leading-relaxed font-light">
+                        Smooth scaling business node hosting fluid components and cross-viewport responsive configurations.
+                    </p>
+                </div>
+                <div class="h-1 w-0 bg-gradient-to-r from-[#00F0FF] to-[#A855F7] group-hover:w-full transition-all duration-500"></div>
+            </a>
+
+            <!-- Advanced Card 3 (Live Joke API) -->
+            <a href="https://github.io" target="_blank" class="bg-[#120B28]/70 border border-[#231548] rounded-2xl overflow-hidden flex flex-col group hover:border-[#00F0FF] hover:shadow-[0_0_40px_rgba(0,240,255,0.3)] hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm relative">
+                <div class="p-6 flex-grow">
+                    <div class="text-[#00F0FF] font-mono text-[10px] tracking-widest mb-3 flex justify-between items-center">
+                        <span>ASYNC DATA CHANNEL</span>
+                        <span class="text-sm font-bold transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">↗</span>
+                    </div>
+                    <h3 class="text-xl font-black text-white mb-3 group-hover:text-[#00F0FF] transition-colors">Live Joke API</h3>
+                    <p class="text-[#CBD5E1] text-sm leading-relaxed font-light">
+                        Asynchronous scripting structures establishing real-time updates without forcing heavy layout engine tasks.
+                    </p>
+                </div>
+                <div class="h-1 w-0 bg-gradient-to-r from-[#00F0FF] to-[#f43f5e] group-hover:w-full transition-all duration-500"></div>
+            </a>
         </div>
-      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section
-      id="projects"
-      class="py-24 px-6 bg-gradient-to-t from-[#0B0F19] to-gray-950"
-    >
-      <div class="max-w-4xl mx-auto">
-        <h2
-          class="text-2xl sm:text-3xl font-bold mb-12 flex items-center gap-4"
-        >
-          <span class="text-[#10B981] font-mono text-xl">03.</span> Selected
-          Projects
-          <span class="h-[1px] bg-gray-800 flex-grow"></span>
-        </h2>
-       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <!-- Project 1 (Flipkart Clone) -->
-    <a href="https://rahamat9007office-commits.github.io/flipkart.clone/" target="_blank" class="bg-[#151D30] border border-gray-800 rounded-xl overflow-hidden shadow-xl flex flex-col group hover:border-[#10B981]/40 hover:shadow-[0_0_25px_rgba(16,185,129,0.25)] transition-all duration-300">
-        <div class="p-6 flex-grow">
-            <div class="text-[#10B981] font-mono text-xs mb-2 flex justify-between items-center">
-                <span>E-Commerce Architecture</span>
-                <span class="text-sm">↗</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-[#10B981] transition-colors">Flipkart Clone</h3>
-            <p class="text-[#94A3B8] text-sm leading-relaxed">
-                A high-fidelity replica structure using a complex native Grid layout. Optimized for intense screen density and zero UI element shift.
-            </p>
-        </div>
-    </a>
-
-    <!-- Project 2 (Shangrila Restaurant) -->
-    <a href="https://rahamat9007office-commits.github.io/resturant.github.io./" target="_blank" class="bg-[#151D30] border border-gray-800 rounded-xl overflow-hidden shadow-xl flex flex-col group hover:border-[#10B981]/40 hover:shadow-[0_0_25px_rgba(16,185,129,0.25)] transition-all duration-300">
-        <div class="p-6 flex-grow">
-            <div class="text-[#10B981] font-mono text-xs mb-2 flex justify-between items-center">
-                <span>Commercial Portal</span>
-                <span class="text-sm">↗</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-[#10B981] transition-colors">Shangrila Restaurant</h3>
-            <p class="text-[#94A3B8] text-sm leading-relaxed">
-                A highly responsive business interface complete with custom menus, reservation form blocks, and cross-device scaling.
-            </p>
-        </div>
-    </a>
-
-    <!-- Project 3 (hospital portal) -->
-    <a href="https://rahamat9007office-commits.github.io/hospital.github.io./" target="_blank" class="bg-[#151D30] border border-gray-800 rounded-xl overflow-hidden shadow-xl flex flex-col group hover:border-[#10B981]/40 hover:shadow-[0_0_25px_rgba(16,185,129,0.25)] transition-all duration-300">
-        <div class="p-6 flex-grow">
-            <div class="text-[#10B981] font-mono text-xs mb-2 flex justify-between items-center">
-                <span>Asynchronous App</span>
-                <span class="text-sm">↗</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-[#10B981] transition-colors">hospital portal</h3>
-            <p class="text-[#94A3B8] text-sm leading-relaxed">
-                An event-driven interface performing async asynchronous runtime data updates by connecting client actions directly with external REST APIs.
-            </p>
-        </div>
-    </a>
-    <!-- Project 4 (Live Joke API Portal) -->
-    <a href="https://rahamat9007office-commits.github.io/jock.api/" target="_blank" class="bg-[#151D30] border border-gray-800 rounded-xl overflow-hidden shadow-xl flex flex-col group hover:border-[#10B981]/40 hover:shadow-[0_0_25px_rgba(16,185,129,0.25)] transition-all duration-300">
-        <div class="p-6 flex-grow">
-            <div class="text-[#10B981] font-mono text-xs mb-2 flex justify-between items-center">
-                <span>Asynchronous App</span>
-                <span class="text-sm">↗</span>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-[#10B981] transition-colors">Live Joke API Portal</h3>
-            <p class="text-[#94A3B8] text-sm leading-relaxed">
-                An event-driven interface performing async asynchronous runtime data updates by connecting client actions directly with external REST APIs.
-            </p>
-        </div>
-    </a>
-</div>
-
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-        <!-- Contact Section -->
-    <section id="contact" class="py-24 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-4">Get In Touch</h2>
-        <p class="text-[#94A3B8] max-w-md mx-auto mb-10 text-sm sm:text-base">
-            I’m always open to discussing web application projects, custom optimization setups, or full-stack pipeline opportunities.
+    <!-- Contact Security Pipeline Section -->
+    <section id="contact" class="py-32 px-6 max-w-4xl mx-auto text-center relative z-10">
+        <h2 class="text-3xl font-black mb-4 uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500">Secure Network Stream</h2>
+        <p class="text-[#CBD5E1] max-w-md mx-auto mb-16 text-sm sm:text-base font-light">
+            Initialize an active communication sequence. Interfacing available for production integrations and advanced stack execution.
         </p>
-        <form id="contactForm" class="max-w-xl mx-auto space-y-4 text-left">
-            <div>
-                <label for="name" class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-2">Full Name</label>
-                <input type="text" id="name" required class="w-full bg-[#151D30] border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#10B981] transition-colors">
+        
+        <form id="contactForm" class="max-w-xl mx-auto space-y-6 text-left relative bg-[#0c071c]/60 p-8 rounded-2xl border border-[#231548] backdrop-blur-md shadow-2xl group hover:border-[#A855F7]/30 transition-all duration-500">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-[10px] font-mono font-bold uppercase tracking-widest text-[#A855F7] mb-2">IDENTIFIER / NAME</label>
+                    <input type="text" id="name" required class="w-full bg-[#120B28]/90 border border-[#231548] rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#00F0FF] focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all font-mono text-sm">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-mono font-bold uppercase tracking-widest text-[#A855F7] mb-2">ENDPOINT / EMAIL</label>
+                    <input type="email" id="email" required class="w-full bg-[#120B28]/90 border border-[#231548] rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#00F0FF] focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all font-mono text-sm">
+                </div>
             </div>
             <div>
-                <label for="email" class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-2">Email Address</label>
-                <input type="email" id="email" required class="w-full bg-[#151D30] border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#10B981] transition-colors">
+                <label class="block text-[10px] font-mono font-bold uppercase tracking-widest text-[#A855F7] mb-2">DATA PAYLOAD / MESSAGE</label>
+                <textarea id="message" rows="4" required class="w-full bg-[#120B28]/90 border border-[#231548] rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-[#00F0FF] focus:shadow-[0_0_15px_rgba(0,240,255,0.2)] transition-all font-mono text-sm"></textarea>
             </div>
-            <div>
-                <label for="message" class="block text-xs font-bold uppercase tracking-wider text-[#94A3B8] mb-2">Message</label>
-                <textarea id="message" rows="5" required class="w-full bg-[#151D30] border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#10B981] transition-colors"></textarea>
-            </div>
-            <button type="submit" class="w-full py-4 bg-[#10B981] hover:bg-[#059669] text-[#0B0F19] font-bold rounded-lg transition-colors shadow-lg shadow-emerald-500/10">
-                Send Secure Message
+            
+            <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#A855F7] via-[#d946ef] to-[#00F0FF] text-white font-black rounded-xl uppercase tracking-widest text-xs transition-all duration-300 transform hover:scale-[1.02] shadow-xl hover:shadow-[0_0_25px_rgba(217,70,239,0.4)]">
+                Transmit Secure Payload
             </button>
         </form>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-8 border-t border-gray-900 text-center text-xs text-[#94A3B8]">
-        <p>&copy; 2026 Rahamat. All rights reserved. Code compiled cleanly.</p>
+    <!-- Terminal Footer -->
+    <footer class="py-12 border-t border-[#231548]/40 text-center text-[10px] text-gray-600 font-mono relative z-10">
+        <p>&copy; 2026 MD RAHAMAT ALI. ALL CORE MODULES RUNNING FLUIDLY.</p>
     </footer>
 
-    <!-- Form Validation Script -->
+    <!-- Form Active Verification Script -->
     <script src="script.js">
         
     </script>
 </body>
 </html>
 
-  </body>
-</html> 
